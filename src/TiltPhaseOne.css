@@ -1,0 +1,24 @@
+.tilt-phase-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .tilt-content {
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+  }
+  
+  .tilt-content:hover {
+    transform: rotateX(10deg) rotateY(10deg);
+  }
+  
+  .tilt-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
